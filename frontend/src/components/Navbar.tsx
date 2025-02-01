@@ -22,7 +22,10 @@ function Navbar() {
       <div>
         {user ? (
           <div className="flex items-center gap-2 sm:gap-3">
-            <button className="flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700">
+            <button
+              className="flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700"
+              onClick={() => handleNavigate(PATHS.buyCredit)}
+            >
               <img
                 src={assets.credit_star}
                 alt="credit_start"
