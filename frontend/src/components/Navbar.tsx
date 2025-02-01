@@ -1,11 +1,11 @@
-import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { PATHS } from "../constant";
+import useAppContext from "../hooks/useAppContext";
 
 function Navbar() {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
+  const { user } = useAppContext();
   const handleNavigate = (path: string) => {
     navigate(path);
   };
