@@ -6,7 +6,7 @@ import { PATHS } from "./constant";
 
 function App() {
   return (
-    <div>
+    <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-teal-50 to-orange-50">
       <Routes>
         <Route path={PATHS.home} element={<Home />} />
         <Route path={PATHS.result} element={<Result />} />
